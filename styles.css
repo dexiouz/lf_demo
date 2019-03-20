@@ -1,0 +1,153 @@
+body , span{
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+button{
+  /* padding: 0; */
+  border: 0
+}
+.main_body {
+  display: flex;
+  height: 93vh;
+}
+.left_side {
+  background: url('../lf_demo/assets/twitter_icon.png') no-repeat;
+  background-size: 155vh;
+  background-position: 50px -200px;
+  background-color: #1da1f2;
+  flex: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold
+}
+.left_side_content div{
+  padding: 0;
+  margin: 48px auto;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px
+}
+.icon {
+  height: 35px;
+  width: auto
+}
+
+
+/* /////////////////////////    right side  ///////////////////// */
+.right_side {
+  flex: 1;
+  position: relative;
+}
+/* //////////////////////      form       ////////////////// */
+.form {
+  width: 100%;
+  position: absolute;
+  margin: 40px auto;
+  font-size: 14px;
+  display: grid;
+  justify-content: center
+}
+form {
+  display: flex;
+  grid-gap: 12px
+}
+.form input {
+  background-color: #fff;
+border: 1px solid #e6ecf0;
+border-radius: 3px;
+width: 210px;
+padding: 12px;
+font-size: 14px;
+line-height: 20px;
+}
+.form button:hover {
+  background-color: #1da0f223;
+}
+.form button {
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+  border-radius: 100px;
+  width: 60px;
+  background-color: white;
+  font-size: 14px;
+  padding: 10px ;
+}
+.form a{
+  text-align: center;
+  text-decoration: none;
+  color: #aab8c2;
+}
+/* \\\\\\\\\\\\\\    auxillary info       \\\\\\\\\\\\\\\\\\\\\\\ */
+.auxillaryInfo {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  max-width: 350px;
+  margin: auto;
+  font-weight: bold
+}
+.icon_test {
+  font-size: 19px;
+}
+.sign_signup_button  {
+  display: grid;
+  grid-gap: 12px
+}
+.sign_signup_button button{
+  font-size: 14px;
+  border-radius: 100px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+.sign_signup_button button:nth-child(1){
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  color: #fff;
+}
+.sign_signup_button button:nth-child(2){
+  background-color: #fff;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+}
+.sign_signup_button button:nth-child(1):hover{
+  background-color: #0f7abd;
+}
+.sign_signup_button button:nth-child(2):hover{
+  background-color: #1da0f223;
+}
+/* ////////////////////////// footer ///////////////////////////// */
+footer{
+  border-top: 1px solid #e6ecf0;
+  padding: 11px 0;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 12px;
+  color: #aab8c2;
+  padding: 0 ;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin: 0
+}
+/* //////////////////////    media query       ////////////////// */
+@media all and  (max-width: 1127px){ 
+  .main_body {
+    display: grid;
+  }
+  .left_side {
+    order: 1;
+  }
+  .form input, .form a{
+    display: none
+  }
+  .form button {
+  margin: -30px 0 0 250px;
+  }
+}
